@@ -1,5 +1,14 @@
 #!/bin/bash
 
+echo "   ____       _                         _                          ";
+echo "  / __ \  ___| |__  _ __ ___   ___   __| |_ __ ___   __ _ _____  __";
+echo " / / _\` |/ __| '_ \| '_ \` _ \ / _ \ / _\` | '_ \` _ \ / _\` / __\ \/ /";
+echo "| | (_| | (__| | | | | | | | | (_) | (_| | | | | | | (_| \__ \>  < ";
+echo " \ \__,_|\___|_| |_|_| |_| |_|\___/ \__,_|_| |_| |_|\__,_|___/_/\_\ ";
+echo "  \____/                                                           ";
+echo "En Dios confiamos | In God we trust"
+echo "\n"
+
 # Contenido para enviar_a_telegram.nemo_action
 NEMO_ACTION_CONTENT="[Nemo Action]\nName=Enviar a Telegram\nName[pl]=Wyślij przez Telegram\nComment=Envía archivos a Telegram desde el menú contextual\nComment[pl]=Wysyła ten plik na czat w Telegramie\nQuote=double\nExec=/usr/share/nemo/actions/enviar_a_telegram.sh %F\nIcon-Name=org.telegram.desktop\nSelection=NotNone\nExtensions=nodirs;\nDependencies=telegram-desktop"
 
