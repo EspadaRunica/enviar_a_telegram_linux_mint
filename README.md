@@ -1,4 +1,4 @@
-# Enviar a Telegram - Linux Mint 21.1 / 21.2
+# Enviar a Telegram - Linux Mint 21 / 22
 
 Este script se agrega a tu menú contextual de Nemo en Linux Mint la opción de "Enviar a Telegram"
 
