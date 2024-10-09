@@ -62,6 +62,9 @@ if command -v telegram-desktop > /dev/null; then
 elif command -v telegram > /dev/null; then
     telegram -sendpath "\${arr[@]}"
     wmctrl -x -a Telegram.TelegramDesktop
+elif command -v Telegram > /dev/null; then
+    Telegram -sendpath "\${arr[@]}"
+    wmctrl -x -a Telegram.TelegramDesktop
 else
     flatpak run --file-forwarding org.telegram.desktop -sendpath @@ "\${arr[@]}" @@
     wmctrl -x -a Telegram
