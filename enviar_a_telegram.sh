@@ -16,7 +16,7 @@ NEMO_ACTION_CONTENT="[Nemo Action]\nName=Enviar a Telegram\nName[pl]=Wyślij prz
 SEND_SCRIPT_CONTENT='#!/usr/bin/env bash\n\narr=()\nSAVEIFS=$IFS\nIFS=$(echo -en "\n\b")\n\nfor var in "$@"\ndo\n    path=$(readlink -f $var)\n    arr+=($path)\ndone\n\n# Check if the client is a native app\nif [ $(command -v telegram-desktop) ]; then\n    telegram-desktop -sendpath "${arr[@]}"\n    wmctrl -x -a Telegram.TelegramDesktop\nelse\n    flatpak run --file-forwarding org.telegram.desktop -sendpath @@ "${arr[@]}" @@\n    wmctrl -x -a Telegram\nfi\n\nIFS=$SAVEIFS'
 
 # Ruta donde se crearán los archivos
-DESTINATION_DIR="/usr/share/nemo/actions/"
+DESTINATION_DIR="/home/$USER/.local/share/nemo/actions"
 
 # Rutas completas para los archivos
 NEMO_ACTION_FILE="$DESTINATION_DIR/enviar_a_telegram.nemo_action"
