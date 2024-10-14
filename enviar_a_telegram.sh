@@ -28,9 +28,7 @@ fi
 cat <<EOF > "$NEMO_ACTION_FILE"
 [Nemo Action]
 Name=Enviar a Telegram
-Name[pl]=Wyślij przez Telegram
 Comment=Envía archivos a Telegram desde el menú contextual
-Comment[pl]=Wysyła ten plik na czat w Telegramie
 Quote=double
 Exec=/home/$USER/.local/share/nemo/actions/enviar-a-telegram@chmodmasx/enviar_a_telegram.sh %F
 Icon-Name=org.telegram.desktop
